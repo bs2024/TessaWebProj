@@ -1,0 +1,60 @@
+/*main styles*/
+
+/*header styles*/
+
+/*grid layout*/
+.menuHeader {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #C7C7C7;
+}
+
+.menuHeaderElementR {
+
+}
+
+.menuHeaderElementL {
+
+}
+
+/*menu styles*/
+.menuHeader ul {
+
+}
+
+/*footer styles*/
+
+/*grid layout*/
+.footerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footerGridElement {
+    justify-content: center;
+}
+
+/*menu styles */
+.footerGrid ul {
+
+}
+
+/*search form styles*/
+.footerGrid form {
+
+}
+
+/*H1 alignment and styles*/
+h1 {
+
+}
+
+/*H2 center align*/
+h2 {
+    text-align: center;
+}
+
+/*all footer styles*/
+.footerStyle {
+    background-color: #C7C7C7;
+}
