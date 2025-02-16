@@ -10,11 +10,23 @@
 }
 
 .menuHeaderElementR {
-
+    
 }
 
-.menuHeaderElementL {
+.menuHeaderElementR ul {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    list-style-type: none;
+    padding: 0;
+    margin: 2%;
+} 
 
+.menuHeaderElementR ul li {
+    text-align: center;
+} 
+
+.menuHeaderElementL {
+    
 }
 
 /*menu styles*/
@@ -36,7 +48,15 @@
 
 /*menu styles */
 .footerGrid ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    list-style-type: none;
+    padding: 0;
+    margin: 2%;
+}
 
+.footerGrid ul li {
+    text-align: center;
 }
 
 /*search form styles*/
@@ -46,15 +66,29 @@
 
 /*H1 alignment and styles*/
 h1 {
-
+    font-family: 'Lexend Zetta';
+    margin-left: 2%;
 }
 
 /*H2 center align*/
 h2 {
     text-align: center;
+    font-family: 'Lexend Zetta';
 }
 
 /*all footer styles*/
 .footerStyle {
     background-color: #C7C7C7;
+}
+
+/*main button styles*/
+.buttonMain {
+    font-family: 'Lexend Zetta';
+    text-decoration: none;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 20px;
 }
