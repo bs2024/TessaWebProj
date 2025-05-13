@@ -9,9 +9,58 @@ body {
 
 .mainSlide {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-columns: 2fr 1fr; /* First column 2/3, second column 1/3 */
     gap: 10px;
     padding: 20px;
     background-color: #ffffff;
     max-width: 90%;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%; /* Full width of the parent container */
+    height: 340px; /* Adjust the height as needed */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.slide {
+    position: absolute;
+    width: 100%; /* Make sure the slide takes up the full width of the slideshow */
+    height: 100%; /* Make sure the slide takes up the full height of the slideshow */
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Scale the image to cover the entire container */
+    border-radius: 15px;
+}
+
+.slide.active {
+    opacity: 1;
+ }
+
+.controls {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.controls span {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+.controls span:hover {
+    background: #fff;
 }
